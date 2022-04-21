@@ -5,12 +5,7 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
-:id
-    :has_id_value "id_value" ;
-    :has_id_type :id_type .
-    
 :person
-    :has_nationality :nationality ;
     :has_group_relation :person_group_relation .
 
 :group :has_person_relation :person_group_relation .
