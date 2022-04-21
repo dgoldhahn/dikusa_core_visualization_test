@@ -19,18 +19,6 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_place :place ;
     :has_date "date earliest/latest" .
 
-
-:person
-    :has_occupation :occupation .
-    
-:occupation
-    :has_occupation_value :occupation_value ;
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" .
-
-:person
-    :has_id :id .
-
 :person
     :has_place_relation :person_place_relation .
 
