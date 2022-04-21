@@ -15,3 +15,10 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :person
     :has_id :id .
+
+:person
+    :has_nationality :nationality .
+
+:id
+    :has_id_value "id_value" ;
+    :has_id_type :id_type .
