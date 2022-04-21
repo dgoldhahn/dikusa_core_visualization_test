@@ -6,13 +6,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 :person
-    :has_occupation :occupation {|
-        :has_provenence_text "übernommen aus Geburtsurkunde"@de ;
-        :has_provenence_text "found in birth certificate"@en ;
-        :has_provenence_URI "https://www.geburtsregister.de/dhguy"^^xsd:anyURI ;
-        :has_comment "war leicht zu finden"@de ;
-        :has_provenance_certainty "sicher"@de
-    |} .
+    :has_occupation :occupation .
     
 :occupation
     :has_occupation_value :occupation_value ;
