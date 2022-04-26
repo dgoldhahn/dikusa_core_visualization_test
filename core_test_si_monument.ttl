@@ -31,3 +31,9 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_place_type :place_type ;
     :has_coordinates :coordinates .
 
+:id
+    :has_id_value "id_value" ;
+    :has_id_type :id_type .
+
+:person
+    :has_id :id .
