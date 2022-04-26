@@ -10,8 +10,16 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_alternative_name :alternative_name@language ;
     :has_id :id ;
     :has_location :place ;
-    :has_subject :resource ;
+    :has_subject :person ;
+    :has_event_relation :object_creation_event ;
+    :has_material :material ;
     :has_description :description .
+
+:object_creation_event
+    :has_begin "date earliest/latest" ;
+    :has_end "date earliest/latest" ;
+    :has_participant :person .
+    
 
 :inscription_object
     :is_part_of_object :monument_object ;
@@ -27,14 +35,5 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_id_value "id_value" ;
     :has_id_type :id_type .
 
-
-
 :person
     :has_id :id .
-
-:person
-    :has_nationality :nationality .
-
-:id
-    :has_id_value "id_value" ;
-    :has_id_type :id_type .
