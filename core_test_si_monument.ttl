@@ -6,8 +6,8 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 :monument_object
-    :has_preferred_name :preferred_name_with_language ;
-    :has_alternative_name :alternative_name_with_language ;
+    :has_preferred_name "preferred_name"@language ;
+    :has_alternative_name "alternative_name"@language ;
     :has_id :id ;
     :has_location :place ;
     :has_subject :person ;
