@@ -5,13 +5,29 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
-:object
-    :has_occupation :occupation .
-    
-:occupation
-    :has_occupation_value :occupation_value ;
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" .
+:monument_object
+    :has_preferred_name :preferred_name@language ;
+    :has_alternative_name :alternative_name@language ;
+    :has_id :id ;
+    :has_location :place ;
+    :has_subject :resource ;
+    :has_description :description .
+
+:inscription_object
+    :is_part_of_object :monument_object ;
+    :has_description :description ;
+    :has_inscription_text "inscription_text" .
+
+:place
+    :has_address :address ;
+    :has_place_type :place_type ;
+    :has_coordinates :coordinates ;
+
+:id
+    :has_id_value "id_value" ;
+    :has_id_type :id_type .
+
+
 
 :person
     :has_id :id .
