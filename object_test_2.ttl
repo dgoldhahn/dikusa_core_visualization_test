@@ -7,7 +7,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :object
     :has_actor_relation :object_actor_relation ;
-    :is_part_of :object
+    :is_part_of :object .
 
 :actor
     :has_object_relation :object_actor_relation .
@@ -19,13 +19,3 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_begin "begin earliest/latest" ;
     :has_end "end earliest/latest" ;
     :has_type :type .
-
-
-
-:object_creation :has_creation_type :creation_type .
-
-:object_destruction rdfs:subClassOf :event .
-:object_destruction :has_destruction_type :destruction_type .
-
-:object_modification rdfs:subClassOf :event .
-:object_modification :has_modification_type :modification_type .
