@@ -20,7 +20,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_person_place_relation_type :person_place_relation_type .
 
 :coordinates
-    has_coordinates_value "coordinates_value" ;
+    :has_coordinates_value "coordinates_value" ;
     :has_begin "begin earliest/latest" ;
     :has_end "end earliest/latest" ;
 
