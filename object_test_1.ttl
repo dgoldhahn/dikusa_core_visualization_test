@@ -8,7 +8,8 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :object
     :has_object_creation :object_creation ;
     :has_object_destruction :object_destruction ;
-    :has_object_modification :object_modification .
+    :has_object_modification :object_modification ;
+    :has_subject :subject .
 
 :object_creation
     rdfs:subClassOf :event ;
@@ -21,3 +22,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :object_modification
     rdfs:subClassOf :event ;
     :has_modification_type :modification_type .
+
+:subject
+    :has_subject_type :subject_type ;
+    :has_subject_value :IRI .
