@@ -22,7 +22,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :coordinates
     :has_coordinates_value "coordinates_value" ;
     :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" ;
+    :has_end "end earliest/latest" .
 
 :address
     :has_country :place ;
