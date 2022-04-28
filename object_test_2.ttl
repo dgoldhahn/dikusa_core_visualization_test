@@ -7,7 +7,8 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :object
     :has_actor_relation :object_actor_relation ;
-    :is_part_of :object .
+    :is_part_of :object ;
+    :has_dimension :dimension .
 
 :actor
     :has_object_relation :object_actor_relation .
@@ -19,3 +20,8 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_begin "begin earliest/latest" ;
     :has_end "end earliest/latest" ;
     :has_type :type .
+
+:dimension
+    :has_dimension_type :dimension_type ;
+    :has_value "value" ;
+    :has_unit :unit .
