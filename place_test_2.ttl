@@ -6,27 +6,19 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-:person
-    :has_place_relation :person_place_relation .
-
 :place
-    :has_person_relation :person_place_relation ;
-    :has_coordinates :coordinates ;
-    :has_address :address .
+    :has_begin_change_end_of_existence :bce_existence ;
+    :has_part_of_place :part_of_place .
 
-:person_place_relation
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" ;
-    :has_person_place_relation_type :person_place_relation_type .
+:bce_existence
+    :has_date "date earliest/latest" ;
+    :has_type :type ;
+    :has_place :place .
 
-:coordinates
-    :has_coordinates_value "coordinates_value" ;
+:part_of_place
+    :has_place :place ;
     :has_begin "begin earliest/latest" ;
     :has_end "end earliest/latest" .
 
-:address
-    :has_country :place ;
-    :has_city :place ;
-    :has_postcode "postcode" ;
-    :has_street_address "street_address" .
+
     
