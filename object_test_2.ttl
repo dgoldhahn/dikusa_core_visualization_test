@@ -6,11 +6,22 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 :object
-    :has_object_creation :object_creation ;
-    :has_object_destruction :object_destruction ;
-    :has_object_modification :object_modification ;
+    :has_actor_relation :object_actor_relation ;
+    :is_part_of :object
 
-:object_creation rdfs:subClassOf :event .
+:actor
+    :has_object_relation :object_actor_relation .
+
+:person rdfs:subClassOf :actor .
+:group rdfs:subClassOf :actor .
+
+:object_actor_relation
+    :has_begin "begin earliest/latest" ;
+    :has_end "end earliest/latest" ;
+    :has_type :type .
+
+
+
 :object_creation :has_creation_type :creation_type .
 
 :object_destruction rdfs:subClassOf :event .
