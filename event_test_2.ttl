@@ -1,0 +1,20 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:event
+    :has_resource_relation :event_resource_relation .
+
+:resource
+    :has_event_relation :event_resource_relation .
+
+:work  rdfs:subClassOf :resource .
+
+:object  rdfs:subClassOf :resource .
+
+:event_resource_relation 
+    :has_type :type ;
+    :has_begin "begin earliest/latest" ;
+    :has_end "end earliest/latest" .
