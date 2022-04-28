@@ -9,8 +9,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_location :location ;
     :is_part_of_event :event ;
     :has_subsequent_event :event ;
-    :has_participant :participant ;
-    :has_resource_relation :event_resource_relation .
+    :has_participant :participant .
 
 :location
     :has_place :place ;
@@ -22,15 +21,3 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_end "end earliest/latest" ;
     :has_participant_value :person ;
     :has_participant_role :participant_role .
-
-:resource
-    :has_event_relation :event_resource_relation .
-
-:work  rdfs:subClassOf :resource .
-
-:object  rdfs:subClassOf :resource .
-
-:event_resource_relation 
-    :has_type :type ;
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" .
