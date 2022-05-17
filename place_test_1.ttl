@@ -15,14 +15,18 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     :has_address :address .
 
 :person_place_relation
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" ;
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" ;
     :has_person_place_relation_type :person_place_relation_type .
 
 :coordinates
     :has_coordinates_value "coordinates_value" ;
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" .
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" .
 
 :address
     :has_country :place ;
