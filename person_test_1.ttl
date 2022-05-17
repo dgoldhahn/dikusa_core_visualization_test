@@ -7,19 +7,19 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :person
     :has_preferred_name :preferred_name ;
     :has_alternative_name :alternative_name ;
-    :has_description :description .
+    :has_entity_description :entity_description .
 
 :preferred_name
-    :has_name_value "preferred name value" ;
+    :has_name_value "preferred_name_value" ;
     :has_script :script .
 
 :alternative_name
-    :has_name_value "alternative name value" ;
+    :has_name_value "alternative_name_value" ;
     :has_script :script .
 
 
-:description
-    :has_description_value "description value" ;
+:entity_description
+    :has_entity_description_value "entity_description_value" ;
     :has_author :author .
     
 :author
