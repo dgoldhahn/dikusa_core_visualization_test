@@ -12,8 +12,10 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :person_group_relation
     :has_person_group_relation_type :person_group_relation_type ; 
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" .
+    :has_begin_earliest "begin earliest" ;
+    :has_end_earliest "end earliest" ;
+    :has_begin_latest "begin latest" ;
+    :has_end_latest "end latest" .
 
 :person
     :is_same_person_as :person ;
@@ -24,8 +26,10 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :person_person_relation
     :has_person_person_relation_type :person_person_relation_type ;
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" .
+    :has_begin_earliest "begin earliest" ;
+    :has_end_earliest "end earliest" ;
+    :has_begin_latest "begin latest" ;
+    :has_end_latest "end latest" .
 
 :person :has_citation :citation .
 
