@@ -10,8 +10,10 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     
 :occupation
     :has_occupation_value :occupation_value ;
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" .
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" .
 
 :person
     :has_id :id .
