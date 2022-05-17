@@ -13,11 +13,14 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :birth
     :has_place :place ;
-    :has_date "date earliest/latest" .
+    :has_date_earliest "birth_date_earliest" ;
+    :has_date_latest "birth_date_latest" .
 
 :death
     :has_place :place ;
-    :has_date "date earliest/latest" .
+    :has_date_earliest "death_date_earliest" ;
+    :has_date_latest "death_date_latest" .
+
 
 :person
     :has_place_relation :person_place_relation .
@@ -25,8 +28,10 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :place :has_person_relation :person_place_relation .
 
 :person_place_relation
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" ;
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" ;
     :has_person_place_relation_type :person_place_relation_type .
 
     
