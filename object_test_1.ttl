@@ -13,16 +13,16 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :object_creation
     rdfs:subClassOf :event ;
-    :has_creation_type :creation_type .
+    :has_object_creation_type :object_creation_type .
 
 :object_destruction
     rdfs:subClassOf :event ;
-    :has_destruction_type :destruction_type .
+    :has_object_destruction_type :object_destruction_type .
 
 :object_modification
     rdfs:subClassOf :event ;
-    :has_modification_type :modification_type .
+    :has_object_modification_type :object_modification_type .
 
 :subject
-    :has_subject_type :subject_type ;
+    :has_subject_relation_type :subject_relation_type ;
     :has_subject_value :IRI .
