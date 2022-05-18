@@ -13,11 +13,15 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :location
     :has_place :place ;
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" .
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" .
 
 :participant
-    :has_begin "begin earliest/latest" ;
-    :has_end "end earliest/latest" ;
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" ;
     :has_participant_value :person ;
     :has_participant_role :participant_role .
