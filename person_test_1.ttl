@@ -17,7 +17,7 @@
     :has_name_value "alternative_name_value" ;
     :has_script :script .
 
-<< :person :has_preferred_name :preferred_name >> :has_provenance_URL "URL" .
+<<:person :has_preferred_name :preferred_name>> :has_provenance_URL "URL" .
 
 :entity_description
     :has_entity_description_value "entity_description_value" ;
