@@ -185,8 +185,9 @@ _:a015
     |} .
     
 :dhguy
-    :has_place_relation _:a006 ;
     :has_place_relation _:a007 .
+_:a006
+    :has_place_relation_i :dhguy .
 
 _:a006
     :has_begin_earliest "1965-08-26"^^xsd:date ;
